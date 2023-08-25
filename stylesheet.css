@@ -1,6 +1,8 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 5%;
+  background-color: pink;
 }
 
 img {
