@@ -1,19 +1,15 @@
-{
-  powers: ["Jump", "Beerpong"];
-  realName: "Tobbi";
-  alias: "Lola";
-  origin: "Island";
-  weakness: "boxing";
-  active: false;
-  isEvil: true;
-  height: 168;
-  birthday: {
-    day: 14;
-    month: 7;
-    year: 1998;
-  }
+fetch("https://kea-alt-del.dk/t7/superheroes")
+  .then((res) => res.json())
+  .then(showSuperhero);
 
-  image: "https://www.pexels.com/photo/people-wearing-spider-man-adult-costume-walking-on-train-station-2859016/";
+function showSuperhero(superhero) {
+  superhero.forEach(showSuperhero);
 }
 
-/////////////////////////////////////////////////////
+function showSuperhero(superhero) {
+  const template = document.querySelector("template").content;
+  const copy = template.cloneNode(true);
+
+  const parent = document.querySelector(".grid");
+  parent.appendChild(copy);
+}
