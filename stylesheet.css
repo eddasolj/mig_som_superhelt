@@ -1,0 +1,10 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+img {
+  width: 20vw;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
